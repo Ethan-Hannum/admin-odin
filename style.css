@@ -58,12 +58,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4.5fr;
-    grid-template-rows: 1fr 4fr;
-}
-
-.header {
-    grid-column: 2 / 3;
-    grid-row: 1;
+    grid-template-rows: 1fr 4.5fr;
 }
 
 .sidebar {
@@ -93,6 +88,48 @@ h1, h2, h3, h4, h5, h6 {
 
 .privacy {
   grid-row: 10;
+}
+
+.header {
+  grid-column: 2 / 3;
+  grid-row: 1;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-top {
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 2.5fr minmax(25px, 50px) 1fr;
+  align-items: center;
+}
+
+form {
+  display: flex
+}
+
+form > input {
+  width: 100%;
+}
+
+.top-account-container {
+  grid-column: 3;
+  display: flex;
+}
+
+.header-bottom {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  align-items: center;
+}
+
+.bottom-account-container {
+  display: flex;
+}
+
+.btns {
+  grid-column: 3;
 }
 
 .main-content {
