@@ -80,6 +80,8 @@ body {
     grid-row: 1 / 3;
     display: grid;
     grid-template-rows: minmax(40px, 1fr) 15fr;
+    background-color:rgb(62, 154, 230);
+    color: white;
 }
 
 .title {
