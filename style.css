@@ -73,6 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   align-self: center;
 }
 
+.title .svg-container {
+  width: 46px;
+}
+
 .sidebar nav {
   display: grid;
   grid-template-rows: repeat(6, minmax(20px, 1fr)) 1fr repeat(3, minmax(20px, 1fr)) 7fr;
