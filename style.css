@@ -1,3 +1,12 @@
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /* Modern CSS Reset */
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
@@ -49,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Page stylings below */
+
+body {
+  font-family: Roboto;
+}
 
 .container > div,
 .container > main {
