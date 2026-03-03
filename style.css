@@ -50,7 +50,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Page stylings below */
 
-.container > div {
+.container > div,
+.container > main {
     border: 1px solid black
 }
 
@@ -76,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-rows: repeat(6, minmax(20px, 1fr)) 1fr repeat(3, minmax(20px, 1fr)) 7fr;
   align-items: center;
+}
+
+.sidebar-content {
+  display: flex;
 }
 
 .settings {
@@ -117,6 +122,10 @@ form > input {
   display: flex;
 }
 
+.svg-container {
+  width: 32px;
+}
+
 .header-bottom {
   grid-row: 2;
   display: grid;
@@ -135,4 +144,8 @@ form > input {
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.project-buttons {
+  display: flex;
 }
