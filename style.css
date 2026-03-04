@@ -63,6 +63,10 @@ body {
   font-family: Roboto;
 }
 
+.svg-container {
+  width: 32px;
+}
+
 .container > div,
 .container > main {
     border: 1px solid black
@@ -139,10 +143,6 @@ form > input {
 .top-account-container {
   grid-column: 3;
   display: flex;
-}
-
-.svg-container {
-  width: 32px;
 }
 
 .header-bottom {
