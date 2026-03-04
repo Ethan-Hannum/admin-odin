@@ -67,11 +67,6 @@ body {
   width: 24px;
 }
 
-.container > div,
-.container > main {
-    border: 1px solid black
-}
-
 .container {
     height: 100vh;
     display: grid;
@@ -168,10 +163,13 @@ form > input {
 }
 
 .main-content {
+  box-shadow: inset rgb(176, 182, 189) 0px 5px 10px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color:rgb(213, 222, 233);
 }
 
 .project-buttons {
   display: flex;
 }
+
