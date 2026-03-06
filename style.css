@@ -136,11 +136,19 @@ body {
 }
 
 form {
-  display: flex
+  display: flex;
+  gap: 15px;
 }
 
 form > input {
   width: 100%;
+}
+
+input[type="search"] {
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(213, 222, 233);
 }
 
 .top-account-container {
