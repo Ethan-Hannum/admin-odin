@@ -245,6 +245,18 @@ button {
   position: relative;
 }
 
+.project-card::before {
+  content: " ";
+  background-color: rgb(62, 154, 230);
+  height: 100%;
+  width: 8px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
 .project-card:nth-child(2) {
   grid-column: 1;
   grid-row: 2;
