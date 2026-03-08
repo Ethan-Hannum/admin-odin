@@ -263,3 +263,8 @@ button {
 .project-buttons {
   display: flex;
 }
+
+.right-main {
+  display: grid;
+  grid-row: 1fr 1fr;
+}
