@@ -227,14 +227,25 @@ button {
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 24px repeat(3, 1fr);
+  grid-template-rows: 36px repeat(3, 1fr);
   list-style: none;
   padding-bottom: 24px;
   column-gap: 24px;
 }
 
+.project-name {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.project-card p {
+  width: 75%;
+  color: dimgray;
+}
+
 .main-header {
-  align-self: end;
+  font-weight: 500;
+  font-size: 24px;
 }
 
 .project-card {
@@ -247,7 +258,7 @@ button {
 
 .project-card::before {
   content: " ";
-  background-color: rgb(62, 154, 230);
+  background-color: goldenrod;
   height: 100%;
   width: 8px;
   position: absolute;
