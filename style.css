@@ -313,6 +313,12 @@ button {
 }
 
 .right-main {
+  padding-top: 16px;
   display: grid;
   grid-row: 1fr 1fr;
+}
+
+.announcements {
+  display: grid;
+  grid: 42px repeat(3, 1fr);
 }
