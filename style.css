@@ -202,6 +202,16 @@ input[type="search"] {
 .btns {
   grid-column: 3;
   justify-self: end;
+  display: flex;
+  gap: 24px;
+}
+
+button {
+  padding: 8px 34px;
+  border: none;
+  border-radius: 22px;
+  background-color: rgb(62, 154, 230);
+  color: white;
 }
 
 .main-content {
