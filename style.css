@@ -216,12 +216,12 @@ button {
 }
 
 .main-content {
-    box-shadow: inset rgb(176, 182, 189) 0px 5px 10px;
-    background-color:rgb(213, 222, 233);
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+  box-shadow: inset rgb(176, 182, 189) 0px 5px 10px;
+  background-color:rgb(213, 222, 233);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .projects-container {
@@ -320,5 +320,15 @@ button {
 
 .announcements {
   display: grid;
-  grid: 42px repeat(3, 1fr);
+  grid-template-rows: 42px repeat(3, 1fr);
+  list-style: none;
+}
+
+.announcements li {
+  background-color: white;
+}
+
+.announce-name {
+  font-size: 17px;
+  font-weight: 600;
 }
