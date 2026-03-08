@@ -228,6 +228,21 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 24px repeat(3, 1fr);
+  list-style: none;
+  padding-bottom: 24px;
+  column-gap: 24px;
+}
+
+.main-header {
+  align-self: end;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 30px 0px 0px 30px;
+  position: relative;
 }
 
 .project-card:nth-child(2) {
@@ -262,6 +277,14 @@ button {
 
 .project-buttons {
   display: flex;
+  gap: 20px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+}
+
+.project-buttons .svg-container {
+  width: 28px;
 }
 
 .right-main {
