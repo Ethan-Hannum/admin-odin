@@ -197,6 +197,7 @@ input[type="search"] {
 .bottom-account-container {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .btns {
