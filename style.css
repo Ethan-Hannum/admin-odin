@@ -227,8 +227,9 @@ button {
 .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 36px repeat(3, 1fr);
+  grid-template-rows: 42px repeat(3, 1fr);
   list-style: none;
+  padding-top: 16px;
   padding-bottom: 24px;
   column-gap: 24px;
 }
@@ -236,6 +237,7 @@ button {
 .project-name {
   font-weight: 600;
   font-size: 20px;
+  padding-bottom: 3px;
 }
 
 .project-card p {
