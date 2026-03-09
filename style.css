@@ -325,7 +325,8 @@ button {
   margin-right: 40px;
 }
 
-.announcements li {
+.announcements li,
+.trending-container li {
   background-color: white;
 }
 
@@ -369,4 +370,15 @@ button {
   display: grid;
   grid-template-rows: 42px repeat(4, 1fr);
   list-style: none;
+  margin-right: 40px;
+}
+
+.trending-container li:nth-child(2) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.trending-container li:nth-child(5) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
