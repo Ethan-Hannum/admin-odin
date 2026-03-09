@@ -179,7 +179,8 @@ input[type="search"] {
   gap: 24px;
 }
 
-.top-account-container .pfp-top {
+.top-account-container .pfp-top,
+li .user-pfp  {
   width: 52px;
 }
 
@@ -393,6 +394,5 @@ button {
 }
 
 li .user-pfp {
-  width: 52px;
   margin-right: 10px;
 }
