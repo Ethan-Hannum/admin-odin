@@ -322,13 +322,45 @@ button {
   display: grid;
   grid-template-rows: 42px repeat(3, 1fr);
   list-style: none;
+  margin-right: 40px;
 }
 
 .announcements li {
   background-color: white;
 }
 
+.announcements li:nth-child(2) {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 30px;
+}
+
+.borders {
+  border: dimgray 1px;
+  border-style: solid none solid none;
+  padding: 30px 0px 30px 0px;
+}
+
+.announcements li:nth-child(4) {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-top: 30px;
+}
+
+.announce-content {
+  margin: 0px 30px 0px 30px
+}
+
 .announce-name {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+.announce-name + p {
+  color: dimgray;
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
