@@ -353,7 +353,7 @@ button {
 }
 
 .announce-name {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -364,6 +364,7 @@ button {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 15px;
 }
 
 .trending-container {
@@ -371,6 +372,12 @@ button {
   grid-template-rows: 42px repeat(4, 1fr);
   list-style: none;
   margin-right: 40px;
+}
+
+.trending-container li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 0px 30px;
 }
 
 .trending-container li:nth-child(2) {
@@ -381,4 +388,9 @@ button {
 .trending-container li:nth-child(5) {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  padding-bottom: 10px;
+}
+li .user-pfp {
+  width: 52px;
+  margin-right: 10px;
 }
