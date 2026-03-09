@@ -63,6 +63,18 @@ body {
   font-family: Roboto;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.project-card a,
+.announce-content a,
+li .user-info,
+.top-name a {
+  color: black;
+}
+
 .svg-container {
   width: 24px;
 }
@@ -95,6 +107,7 @@ body {
 }
 
 .sidebar-content {
+  height: 100%;
   display: grid;
   grid-template-rows: subgrid;
   gap: 10px;
@@ -185,6 +198,40 @@ input[type="search"] {
   gap: 24px;
 }
 
+.top-account-container > .line::after {
+  display: block;
+  content: " ";
+  width: calc(100% + 5px);
+  height: 2px;
+  background-color: dimgray;
+  transform: translate(-3px, 10px) scale(0);
+  transform-origin: center;
+  transition: all 0.5s ease-out;
+}
+
+.top-account-container > .line:hover::after {
+  transform: translate(-3px, 10px) scale(1);
+  transition: all 0.2s ease-out;
+}
+
+.top-account-container > .pfp-top::after,
+.project-buttons > .svg-container::after {
+  display: block;
+  content: " ";
+  width: calc(100% + 5px);
+  height: 2px;
+  background-color: dimgray;
+  transform: translate(-2px, -5px) scale(0);
+  transform-origin: center;
+  transition: all 0.5s ease-out;
+}
+
+.top-account-container > .pfp-top:hover::after,
+.project-buttons > .svg-container:hover::after {
+  transform: translate(-2px, 5px) scale(1);
+  transition: all 0.2s ease-out;
+}
+
 .top-account-container .pfp-top,
 li .user-pfp  {
   width: 52px;
@@ -220,7 +267,13 @@ button {
   border: none;
   border-radius: 22px;
   background-color: rgb(62, 154, 230);
+  transition: background-color 0.5s ease-out;
   color: white;
+}
+
+button:hover {
+  background-color: goldenrod;
+  transition: background-color 0.5s ease-out;
 }
 
 .main-content {
