@@ -364,3 +364,9 @@ button {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.trending-container {
+  display: grid;
+  grid-template-rows: 42px repeat(4, 1fr);
+  list-style: none;
+}
